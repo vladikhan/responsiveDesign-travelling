@@ -29,6 +29,74 @@ nav a {
   text-decoration: none;
 }
 
+.button {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #62abd9;
+  color: #fff;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button span,
+.button .icon {
+  position: absolute;
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+
+.button span {
+  width: 72%;
+  left: 0px;
+  line-height: inherit;
+  font-size: 22px;
+}
+
+.button .icon {
+  right: 0;
+  width: 28%;
+}
+
+.button .icon .fa {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.button span,
+.button div,
+.button i {
+  transition: all 1.2s ease-out 0.2s;
+}
+
+.icon {
+  width: 200px;
+  background-color: #0477bf;
+}
+h2 .button:hover span {
+  left: -72%;
+}
+
+.button:hover .icon {
+  width: 100%;
+}
+
+.button:hover .icon .fa {
+  font-size: 45px;
+}
+
 .intro {
   height: 30rem;
   padding-top: 1rem;
@@ -51,7 +119,7 @@ nav a {
   padding: 2rem;
 }
 h2 {
-  color: #acd7f2;
+  color: white;
   font-size: 34px;
 }
 p {
